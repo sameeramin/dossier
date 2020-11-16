@@ -1,2 +1,2 @@
-# dossier
+# Dossier
 Portfolio theme for WordPress
