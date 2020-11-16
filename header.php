@@ -35,13 +35,10 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
+wp_nav_menu( array(
+    'theme_location' => 'primary_menu',
+    'items_wrap'     => '<ul><li id="item-id"><?php __( 'Main Menu', 'dossier' ); ?></li>%3$s</ul>'
+) );
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-            </div>
-        </header>
+        

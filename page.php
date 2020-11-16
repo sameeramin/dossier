@@ -1,4 +1,12 @@
 <?php get_header(); ?>
+        <!-- Masthead-->
+        <header class="masthead" style="background-image: url('<?php bloginfo('template_directory');?>/img/header-bg.jpg');>
+            <div class="container">
+                <div class="masthead-subheading">Welcome To Our Studio!</div>
+                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+            </div>
+        </header>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
@@ -7,6 +15,7 @@
                         <div id="main">
                             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                             <div id="post-<?php the_ID(); ?>" <?php post_class(array('card', 'mb-3')); ?>>
+                              <img src="images/ecard-nycstartups.jpg" class="card-img-top" alt="...">
                               <div class="card-body">
                                 <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
                                 <p class="card-text"><?php the_content();?></p> 

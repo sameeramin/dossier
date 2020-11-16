@@ -1,4 +1,12 @@
 <?php get_header(); ?>
+        <!-- Masthead-->
+        <header class="masthead" style="background-image: url('<?php bloginfo('template_directory');?>/img/header-bg.jpg');>
+            <div class="container">
+                <div class="masthead-subheading">Welcome To Our Studio!</div>
+                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+            </div>
+        </header>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
